@@ -1,0 +1,455 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(./IMG/backgraound.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.main-item {
+    margin-top: 80px;
+}
+
+
+/* header */
+
+header {
+    right: -20px;
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding: 0px;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    background: rgb(24, 24, 24);
+    align-self: center;
+    flex-direction: row;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+a {
+    margin: 0 30px 0;
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    display: inline-block;
+    text-align: center;
+    transition: all .4s linear;
+    font-size: 25px;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a.nav-link {
+    position: relative;
+}
+
+.navbar-links {
+    list-style-type: none;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+a.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    bottom: 0;
+    right: 0;
+    transition: all 0.33s linear;
+}
+
+a.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+
+/* about me */
+
+.information1 {
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    margin: 30px;
+}
+
+.about {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.about2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myimage img {
+    width: 244px;
+    height: 310px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+
+/* Education */
+
+.edudiv {
+    text-align: center;
+}
+
+.education {
+    color: white;
+}
+
+.education1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.education-element {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inha {
+    width: 507px;
+    height: 348px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+li {
+    width: 200px;
+}
+
+.school {
+    width: 448px;
+    height: 348px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.schoolinfo {
+    margin: 1px 123px;
+}
+
+.inhainfo {
+    margin: 1px 200px;
+}
+
+
+/* Language */
+
+.language {
+    color: #ffffff;
+}
+
+.languagephoto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.languagephoto2 {
+    width: 448px;
+    height: 398px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.languageinfo {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Skill */
+
+
+/* Container for skill bars */
+
+.container {
+    width: 1000px;
+    /* Full width */
+    background-color: #191970;
+    /* Grey background */
+    border-radius: 30px;
+    opacity: 0.9;
+}
+
+.colorwhite {
+    background-color: #ffffff;
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: rgb(255, 255, 255);
+    /* White text color */
+}
+
+.html {
+    width: 90%;
+    background-color: #04AA6D;
+    border-radius: 30px;
+}
+
+
+/* Green */
+
+.css {
+    width: 80%;
+    background-color: #2196F3;
+    border-radius: 30px;
+}
+
+
+/* Blue */
+
+.js {
+    width: 65%;
+    background-color: #f44336;
+    border-radius: 30px;
+}
+
+
+/* Red */
+
+.php {
+    width: 60%;
+    background-color: #808080;
+    border-radius: 30px;
+}
+
+
+/* Dark Grey */
+
+
+/* project */
+
+.projectimage {
+    width: 448px;
+    height: 398px;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#project {
+    text-align: center;
+    color: #ffffff;
+}
+
+.codestyle {
+    background-color: #202020;
+}
+
+
+/* contact me */
+
+button {
+    margin: 14px 14px;
+    padding: 10px 10px;
+    background-color: grey;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: gray;
+    }
+}
+
+.typing {
+    width: 756px;
+    height: 300px;
+}
+
+.contact {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+textarea,
+input {
+    width: 900px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #a3a3a3;
+    border-radius: 5px;
+}
+
+.input {
+    display: flex;
+}
+
+.contact h2 {
+    margin-top: 0px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.contactme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #ffffff;
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.instagram:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.telegram {
+    width: 80px;
+    height: 80px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.telegram:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.email {
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.email:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+
+/* footer */
+
+footer {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.iconGithub {
+    width: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.iconGithub:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+.iconRS {
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.iconRS {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.iconRS:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+.item {
+    list-style-type: none;
+    ;
+}
